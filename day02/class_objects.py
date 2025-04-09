@@ -30,7 +30,7 @@ class Item:
         return f'{type(self).__name__} {self.__dict__}'
 
     def instance_method(self):
-        print("This is an instance method")
+        print(f"This is an instance method {self.item_name}")
 
     @staticmethod  # can not interact with any instance or static variables
     def static_method():
