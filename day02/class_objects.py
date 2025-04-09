@@ -29,16 +29,16 @@ class Item:
     def __str__(self):  # instance method
         return f'{type(self).__name__} {self.__dict__}'
 
-    @staticmethod # can not interact with any instance or static variables
+    def instance_method(self):
+        print("This is an instance method")
+
+    @staticmethod  # can not interact with any instance or static variables
     def static_method():
         print(f"This is a static method")
 
     @classmethod  # equivilent to static method of java: only accept static variables
     def class_method(cls):
         print(f"This is a class method: {cls.made_in}")
-
-
-
 
 
 item1 = Item("Pen", 2)
