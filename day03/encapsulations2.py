@@ -29,3 +29,6 @@ class Item:
 item1 = Item()
 item1.item_name = "Laptop"
 print(item1.item_name)
+
+item1.item_price = 100
+print(item1.item_price)
